@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Document</title>
+  <style>
+
+    .dept-container{
+      display: flex;
+      height: 540px;
+      border: 2px solid;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+      background-color: antiquewhite;
+    }
+    
+    .dept{
+      width: 230px;
+      margin: 23px;
+      position: relative;
+    }
+
+    .dept-img{
+      width: 100%;
+      border: 5px solid blue;
+      border-radius: 50%;
+    }
+
+    
+
+  .dept-desc{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    background-color: rgba(28, 135, 135, 0.577);
+    border-radius: 50%;
+    opacity: 0;
+  }
+
+  .dept:hover .dept-desc{
+    opacity: 1;
+  }
+
+  .dept-overlay{
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(6, 237, 237);
+  }
+
+  </style>
+</head>
+<body>
+  <div class="dept-container">
+    <div class="dept" title="Kenya Anglican Mens Association">
+      <img src="assets/images/KAMA.png" alt="" class="dept-img">
+      <div class="dept-desc">
+        <div class="dept-overlay">
+          KAMA
+        </div>
+      </div>
+    </div>
+
+    <div class="dept" title="kenya anglican youth organisation">
+      <img src="assets/images/kayo.jpeg" alt="" class="dept-img">
+      <div class="dept-desc">
+       <div class="dept-overlay">
+         KAYO
+       </div>
+      </div>
+    </div>
+
+    <div class="dept" title="mothers union">
+      <img src="assets/images/MU.png" alt="" class="dept-img">
+      <div class="dept-desc">
+        <div class="dept-overlay">
+          MU
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-E_L8wiw4z0?si=iYRnt5wK8Fh9ufRr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        duration: 3000,
+      }     
+    );
+  </script>
+</body>
+</html>
