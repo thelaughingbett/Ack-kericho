@@ -5,93 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles/index.css">
+  <script src="https://kit.fontawesome.com/f58d60dffb.js" crossorigin="anonymous"></script>
   <title>Document</title>
   <style>
 
-    .dept-container{
-      display: flex;
-      height: 540px;
-      border: 2px solid;
-      justify-content: center;
-      align-items: center;
-      gap: 45px;
-      background-color: antiquewhite;
-    }
-    
-    .dept{
-      width: 230px;
-      margin: 23px;
-      position: relative;
+    .para{
+      background-color: aliceblue;
     }
 
-    .dept-img{
-      width: 100%;
-      border: 5px solid blue;
+    .para > ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 23px 45px;
+      gap: 12px;
+    }
+
+    .core-values{
+      font-size: 45px;
+      text-align: center;
+      margin: 12px;
+    }
+
+    .core-intro{
+      padding: 7px 43px;
+      font-size: 20px;
+    }
+
+    .fa-solid ,.fa{
+      height: 54px;
+      width: 54px;
+      font-size: 34px;
       border-radius: 50%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    
-
-  .dept-desc{
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 98%;
-    height: 98%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    background-color: rgba(28, 135, 135, 0.577);
-    border-radius: 50%;
-    opacity: 0;
-  }
-
-  .dept:hover .dept-desc{
-    opacity: 1;
-  }
-
-  .dept-overlay{
-    font-size: 34px;
-    font-weight: bold;
-    color: rgb(6, 237, 237);
-  }
+    .core-value{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 23px;
+      border: 1px solid;
+    }
 
   </style>
 </head>
 <body>
-  <div class="dept-container">
-    <div class="dept" title="Kenya Anglican Mens Association">
-      <img src="assets/images/KAMA.png" alt="" class="dept-img">
-      <div class="dept-desc">
-        <div class="dept-overlay">
-          KAMA
-        </div>
-      </div>
-    </div>
 
-    <div class="dept" title="kenya anglican youth organisation">
-      <img src="assets/images/kayo.jpeg" alt="" class="dept-img">
-      <div class="dept-desc">
-       <div class="dept-overlay">
-         KAYO
-       </div>
-      </div>
-    </div>
-
-    <div class="dept" title="mothers union">
-      <img src="assets/images/MU.png" alt="" class="dept-img">
-      <div class="dept-desc">
-        <div class="dept-overlay">
-          MU
-        </div>
-      </div>
-    </div>
+  <div class="para">
+    <p class="core-values"> Our Core Values</p> 
+    <p class="core-intro">The organizational life and ministry operations are guided by the following core values:</p> 
+    <ul>
+      <li class="core-value"><i class="fa-solid fa-cross"></i> Adherence to Christian ethics, practice of orthodox Anglican beliefs and traditions; </li>
+      <li class="core-value" ><i class="fa-solid fa-dove"></i> Faith in God and obedience to the Holy Scriptures, wise counsel and guidance of holy spirit;</li>
+      <li  class="core-value"><i class="fa-solid fa-hand-holding-heart"></i> Love and care for all God’s people the poor and the disadvantaged irrespective of race, religion or any other difference; </li>
+      <li  class="core-value" ><i class="fa-solid fa-hands-holding-child"></i> Good stewardship, accountability, truthfulness and honest service to God and all people in the use of resources placed upon our care;</li>
+      <li  class="core-value" ><i class="fa-solid fa-handshake-simple"></i> Hard work aided by competence and confidence for quality and satisfactory results;</li>
+      <li  class="core-value" ><i class="fa fa-certificate" aria-hidden="true"></i> High regard for standards and professionalism;</li>
+      <li  class="core-value" ><i class="fa fa-users" aria-hidden="true"></i> Determination and commitment;</li>
+    </ul>
   </div>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/-E_L8wiw4z0?si=iYRnt5wK8Fh9ufRr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+  <a href="tel:+254 741 558 388">my no</a>
+  <a href="mailto: bett3304@gmail.com">my email</a>
  
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -100,6 +78,17 @@
         duration: 3000,
       }     
     );
+
+    document.querySelectorAll('.button').forEach((button) =>{
+      button.addEventListener('click', ()=>{
+        document.querySelector('.overlay').classList.add('overlay-active')
+      })
+    } ) 
+
+    document.querySelector('.overlay').onclick = () =>{
+      document.querySelector('.overlay').classList.remove('overlay-active')
+    }
+
   </script>
 </body>
 </html>

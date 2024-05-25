@@ -293,7 +293,6 @@ color: aliceblue;
 .dept-container{
   display: flex;
   height: 540px;
-  border: 2px solid;
   justify-content: center;
   align-items: center;
   gap: 45px;
@@ -343,6 +342,49 @@ opacity: 1;
 font-size: 34px;
 font-weight: bold;
 color: rgb(6, 237, 237);
+}
+
+
+.para{
+  background-color: rgb(243, 243, 243);
+  margin-top: -12px;
+}
+
+.para > ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 23px 45px;
+  gap: 12px;
+}
+
+.core-values{
+  font-size: 45px;
+  text-align: center;
+  margin: 12px;
+}
+
+.core-intro{
+  padding: 7px 43px;
+  font-size: 20px;
+}
+
+.para .fa-solid,.para .fa{
+  height: 54px;
+  width: 54px;
+  font-size: 34px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core-value{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 23px;
+  border: 1px solid;
 }
 
 

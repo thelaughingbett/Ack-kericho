@@ -1,3 +1,8 @@
+.back{
+  object-fit: contain;
+  object-position: center;
+}
+
 .archdeacon-container{
   margin-top: 100px;
   height: 93vh;
