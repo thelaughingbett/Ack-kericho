@@ -9,7 +9,7 @@
   position: fixed;
   z-index: 5;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   height: 98px;
   display: flex;
   align-items: center;
@@ -17,6 +17,8 @@
   padding: 0px 87px 0px 167px;
   background-color: #301d72;
 }
+
+
 
 .top-header-contents{
   display: flex;
@@ -81,6 +83,10 @@
   cursor: pointer;
 }
 
+.hashbar-container{
+  display: none;
+}
+
 .cathedral-box{
   background-image:url("../assets/images/holy-trinity.jpg");
   background-size: cover;
@@ -88,7 +94,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 97vh;
-  margin-top: 77px;
+  margin-top: 98px;
 }
 
 .background-dimmer{
@@ -424,3 +430,4 @@ color: rgb(6, 237, 237);
 .ad{
   font-size: 13px;
 }
+

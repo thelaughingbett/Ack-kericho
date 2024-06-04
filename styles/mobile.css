@@ -1,0 +1,267 @@
+@media(max-width: 772px){
+  .top-header{
+    padding: 27px;
+  }
+
+  .top-cont{
+   display: none;
+   position: absolute;
+   top: 98px;
+   left: 0;
+   background-color: rgb(234, 234, 234);
+   width: 100vw;
+  }
+
+  .top-header-contents{
+    margin: 0;
+  }
+
+  .logo-container{
+    flex-direction: column;
+    float: left;
+  }
+
+  .logo-words{
+    display: none;
+  }
+
+  .hashbar-container{
+    display: block;
+  }
+
+  .hashbar{
+    width:37px;
+    height: 5px;
+    background-color: gray;
+    margin: 10px;
+  }
+
+  .top-words,.fa-sort-desc{
+    font-size: 14px;
+  }
+
+  .header-inf{
+   display: block;
+  }
+
+    
+   .extension-info[data-active]{
+    display: block;
+    opacity: 1;
+  }
+
+  .extension-info{
+    opacity: 0;
+    top: 40px;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    transition: all ease-in 400ms;
+  }
+
+  .fa-sort-asc{
+    opacity: 0;
+  }
+
+  .cathedral-box{
+    width: 100vw;
+  }
+
+  .background-dimmer{
+    border: 2px solid pink;
+  }
+
+  .title-slider{
+    font-size: 2em;
+  }
+
+  .content-slider{
+    font-size: 1em;
+  }
+
+  .img-container{
+    width: 320px;
+  }
+  
+  .content-slider{
+    width: 100vw;
+  }
+
+  .slider-frame{
+    width: 330px;
+    margin: 320px 1px 2px 23px;
+  }
+
+  .slide-images{
+    
+    display: flex;
+    width: 960px;
+    height: 700px;
+    margin: 0 0 0 -65px;
+    animation: slides_animation 73s ease-in infinite alternate running;
+    
+  }
+
+  @keyframes slides_animation{
+    0%{
+      transform: translateX(8%);
+    }
+    33%{transform: translateX(-2%);}
+    66%{transform: translateX(-66%);}
+  }
+
+  .mid-header{
+    font-size: 23px;
+  }
+  .mid-container{
+    width: 100vw;
+    padding: 7px;
+  }
+
+  .bishop-container{
+    display: block;
+    width: 95vw;
+  }
+
+  .bishop-pic{
+    float: left;
+    margin: 7px;
+  }
+
+  .bishop-pic>img{
+    width: 240px;
+  }
+
+  .archdeaconaries-container{
+    width: 100vw;
+  }
+  
+  .arch-title{
+    font-size: 2rem;
+  }
+
+  .arch-grid{
+    grid-template-columns: 1fr;
+    width: 98vw;
+    gap: 34px;
+    padding: 23px 2px;
+  }
+
+  .arch{
+    width: 100%;
+    height: fit-content;
+  }
+
+  .arch>img{
+    width: 100%;
+  }
+
+  .dept-container{
+    width: 100vw;
+    flex-direction: column;
+    height: inherit;
+  }
+
+  .info-container{
+    width: 100vw;
+    padding: 45px 22px;
+  }
+
+  .info{
+    font-size: 13px;
+  }
+
+  .footer{
+    font-size: 0.9rem;
+  }
+
+  .fa-instagram,.fa-twitter,.fa-facebook-official {
+    font-size: 2rem;
+  }
+
+  .archdeacon-holder>img{
+    height: 320px;
+    width: 200px;
+    object-fit:cover;
+    object-position: center;
+  }
+
+  .archdeacon-holder{
+    padding: 2px 12px;
+  }
+
+  .archd-title{
+
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:1120px) and ( min-width:773px){
+  .top-header{
+    padding: 0px 16px 0px 17px;
+  }
+
+  .top-header-contents{
+    font-size: 0.7rem;
+  }
+
+  .content-slider{
+    font: 1em sans-serif;
+  }
+
+  .mid-header{
+    font-size: 23px;
+  }
+  .mid-container{
+    width: 100vw;
+    padding: 7px;
+  }
+
+  .bishop-container{
+    display: block;
+    width: 95vw;
+   min-height: 250px;
+  }
+
+  .bishop-pic{
+    float: left;
+    margin: 7px;
+  }
+
+  .bishop-pic>img{
+    width: 240px;
+  }
+
+  .arch-grid{
+    width: 98vw;
+    padding: 12px 24px;
+  }
+
+  .arch{
+    width: 100%;
+    height: inherit;
+  }
+
+  .archdeaconaries-container{
+    width: 100%;
+  }
+
+  
+  .info-container{
+    width: 100vw;
+    padding: 45px 22px;
+  }
+
+  .info{
+    font-size: 13px;
+  }
+
+  .footer{
+    font-size: 0.9rem;
+  }
+
+  .fa-instagram,.fa-twitter,.fa-facebook-official {
+    font-size: 2rem;
+  }
+
+}

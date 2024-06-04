@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/archdeaconaries.css">
+  <link rel="stylesheet" href="styles/mobile.css">
   <link rel="icon" type="image/png" href="assets/images/ack-kericho.png">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/f58d60dffb.js" crossorigin="anonymous"></script>
+  <script src="scripts/main.js" defer></script>
   <title>Archdeaconary Of Sotik</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
       </p>
     </div>
 
-    <div class="top-header-contents">
+    <div class="top-header-contents top-cont">
      <div class="header-info">
         <span class="top-words">Departments</span>
         <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -66,6 +68,12 @@
       </div>
       &#10073;
     </div>
+
+    <div class="hashbar-container" >
+      <div class="hashbar"></div>
+      <div class="hashbar"></div>
+      <div class="hashbar"></div>
+    </div>
   </div>
 
   <div class="archdeacon-container">
@@ -88,10 +96,10 @@
     </div>
   </div>
 
-  <div class="archdeaconaries-container">
+  <div class="archdeaconaries-container relative">
     <p class="arch-title">OUR PARISHES</p>
-    <div class="arch-grid">
-      <div class="arch">
+    <div class="arch-grid" >
+      <div class="arch img"  data-parish="0">
         <img src="assets/images/sotik.jpg" alt="">
         <div class="arch-name">
           <div class="arch-in">
@@ -100,7 +108,7 @@
         </div>
       </div>
       
-      <div class="arch">
+      <div class="arch img"  data-parish="1">
         <img src="assets/images/sotik.jpg" alt="">
         <div class="arch-name">
           <div class="arch-in">
@@ -109,7 +117,7 @@
         </div>
       </div>
       
-      <div class="arch">
+      <div class="arch img"  data-parish="2">
         <img src="assets/images/sotik.jpg" alt="">
         <div class="arch-name">
           <div class="arch-in">
@@ -118,7 +126,7 @@
         </div>
       </div>
       
-      <div class="arch" >
+      <div class="arch img"  data-parish="3">
         <img src="assets/images/sotik.jpg" alt="">
         <div class="arch-name">
           <div class="arch-in">
@@ -127,6 +135,57 @@
         </div>
       </div>
 
+    </div>
+    <div class="larger-holder" >
+      <div class="con">
+        <span class="x">&#88;</span>
+        <table>
+          <tr>
+          <th colspan="2"><img src="assets/images/ack-kericho.png" alt=""></th>
+          </tr>
+          <tr>
+          <td class="head">
+          Diocese:
+          </td>
+          <td>Kericho</td>
+          </tr>
+          <tr>
+          <td class="head">Archdeaconary:</td>
+          <td></td>
+          </tr>
+          <tr>
+          <td class="head">residing rev:</td>
+          <td></td>
+          </tr>
+          <tr>
+          <td class="head">churches:</td>
+          <td> </td>
+          </tr>
+        </table>
+        <p>
+          <h2>Manaret Parish</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, officiis error possimus optio consequuntur adipisci ratione aspernatur repellendus deleniti sint. Distinctio quibusdam quis quaerat illum, dolores sequi nisi perferendis repellendus exercitationem voluptate tempore error? Aperiam quis aspernatur ipsam quasi est sed delectus ullam error similique tempore culpa ratione ab blanditiis perferendis nulla, cum voluptas facere! Vero assumenda eum veritatis. Mollitia vitae ad inventore, saepe ut beatae repellendus aperiam corrupti dolorum ratione assumenda id dolore, nemo vel!
+        </p>
+    
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, similique nesciunt atque repudiandae deserunt repellat sit officiis debitis aliquam exercitationem provident? Fugiat blanditiis minima possimus aliquid iure aperiam, provident ea officia odit sint corporis saepe adipisci! Eaque culpa cumque sunt! Veritatis, quaerat, earum consequatur quisquam ducimus eaque inventore, assumenda dignissimos ad doloremque commodi nihil repellat suscipit? Nesciunt, commodi! Quisquam voluptatum ullam similique, pariatur quos vitae! Sunt expedita reiciendis architecto! Molestias delectus adipisci, omnis in laborum quod rerum? Quos.
+        </p>
+        <hr>
+        <p>
+          <h3>Clergy</h3>
+    
+          <ul>
+          <li> Ven Philemon rotich - residing reverend</li>
+          <li> Paul Rotich - Layreader Manaret Church</li>
+          </ul>
+          <br>
+          <h3>Parish Church Council</h3>
+    
+          <ul>
+          
+          </ul>
+        </p>
+      </div>
     </div>
   </div>
 

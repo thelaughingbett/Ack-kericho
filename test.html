@@ -4,91 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="styles/index.css">
   <script src="https://kit.fontawesome.com/f58d60dffb.js" crossorigin="anonymous"></script>
   <title>Document</title>
   <style>
 
-    .para{
-      background-color: aliceblue;
+    .slider-container{
+      position: relative;
     }
 
-    .para > ul{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 23px 45px;
-      gap: 12px;
-    }
-
-    .core-values{
-      font-size: 45px;
-      text-align: center;
-      margin: 12px;
-    }
-
-    .core-intro{
-      padding: 7px 43px;
-      font-size: 20px;
-    }
-
-    .fa-solid ,.fa{
-      height: 54px;
-      width: 54px;
-      font-size: 34px;
-      border-radius: 50%;
-      text-align: center;
+    .container{
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 32px;
+      border: 2px solid green;
+      animation: slide 54s ease-in alternate infinite;
     }
 
-    .core-value{
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 23px;
-      border: 1px solid;
+    .img-container{
+      width: 720px;
+      padding: 32px;
     }
+
+    .title-slider{
+      font-size: 45px;
+      color: #af9cbb;
+      text-decoration: underline;        
+    }
+
+    .content-slider{
+      font-size: 40px;
+      color: #aba1b2;
+      padding: 12px 7px;
+      overflow: hidden;
+    }
+
+    @keyframes slide{
+      0%{
+        transform: translateX(25%);
+      }
+
+      50%{
+        transform: translateX(-25%);
+      }
+    }
+
 
   </style>
 </head>
 <body>
 
-  <div class="para">
-    <p class="core-values"> Our Core Values</p> 
-    <p class="core-intro">The organizational life and ministry operations are guided by the following core values:</p> 
-    <ul>
-      <li class="core-value"><i class="fa-solid fa-cross"></i> Adherence to Christian ethics, practice of orthodox Anglican beliefs and traditions; </li>
-      <li class="core-value" ><i class="fa-solid fa-dove"></i> Faith in God and obedience to the Holy Scriptures, wise counsel and guidance of holy spirit;</li>
-      <li  class="core-value"><i class="fa-solid fa-hand-holding-heart"></i> Love and care for all God’s people the poor and the disadvantaged irrespective of race, religion or any other difference; </li>
-      <li  class="core-value" ><i class="fa-solid fa-hands-holding-child"></i> Good stewardship, accountability, truthfulness and honest service to God and all people in the use of resources placed upon our care;</li>
-      <li  class="core-value" ><i class="fa-solid fa-handshake-simple"></i> Hard work aided by competence and confidence for quality and satisfactory results;</li>
-      <li  class="core-value" ><i class="fa fa-certificate" aria-hidden="true"></i> High regard for standards and professionalism;</li>
-      <li  class="core-value" ><i class="fa fa-users" aria-hidden="true"></i> Determination and commitment;</li>
-    </ul>
+  <div class="slider-container">
+    <div class="container">
+      <div class="img-container">
+        <span class="title-slider"><h2>Mission Statement</h2></span>
+        <br>
+        <span class="content-slider">
+          To bring all people into a living relationship with God through Jesus Christ by preaching, teaching, healing and social transformation that enables them to grow in the faith, hope and love to live life in its fullness.
+        </span>
+      </div>
+  
+      <div class="img-container">
+        <span class="title-slider"><h2>vision Statement</h2></span>
+        <br>
+        <span class="content-slider">
+          ACK Kericho Diocese envisions
+          a vibrant empowered ACK Church whose individuals actively bears witness of God’s perfect will of love for mankind through Jesus Christ demonstrated in their character and behavior.
+        </span>
+      </div>
+    </div>
   </div>
 
-  <a href="tel:+254 741 558 388">my no</a>
-  <a href="mailto: bett3304@gmail.com">my email</a>
- 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+
     AOS.init(
       {
         duration: 3000,
       }     
     );
-
-    document.querySelectorAll('.button').forEach((button) =>{
-      button.addEventListener('click', ()=>{
-        document.querySelector('.overlay').classList.add('overlay-active')
-      })
-    } ) 
-
-    document.querySelector('.overlay').onclick = () =>{
-      document.querySelector('.overlay').classList.remove('overlay-active')
-    }
-
   </script>
 </body>
 </html>
