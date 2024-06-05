@@ -1,12 +1,12 @@
 *{
   margin: 0;
   list-style: none;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
   display: block;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 
 body section{
@@ -21,7 +21,7 @@ header{
   right: 0;
   width: 95vw;
   align-items:center;
-  padding: 7px 3% 7px 17%;
+  padding: 7px 3% ;
   z-index: 18;
 }
 
@@ -107,6 +107,14 @@ header > img{
   font-size: 22px;  
   cursor: pointer;
   align-self: flex-end;
+
+}
+
+.carousel{
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .intro{
@@ -169,11 +177,146 @@ header > img{
   right: 1rem;
 }
 
-.events-hero{
-  position: static;
-  
-  display: block;
+.events-hero{  
+  display: flex;
   width: 100vw;
-  height: 100px;
-  background-color: rgba(76, 4, 4, 0.711);
+  height: 190px;
+  background-color:  #f23a2e ;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.highlight{
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 12px;
+  padding: 7px 10px;
+  color: #fff;
+  display: inline-block;
+  background-color: #eec60a 
+}
+
+.highlight p{
+  margin: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.events-head{
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 12px;
+  padding: 7px 10px;
+  color: #fff;
+  display: inline-block;
+}
+
+.mid-container{
+  width: 100vw;
+  text-align: center;
+}
+
+.bishop-container{
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 23px;
+  background-color: #f8f9fa
+}
+
+.bishop-pic{
+  min-width: 200px;
+  height: 100%;
+  position: relative;
+  float: left;
+  border: 1px solid;
+}
+
+.bishop-pic img{
+  width: 100%;
+}
+
+.mid-header{
+  color: rgba(0, 0, 0, 0.796);
+}
+
+.bishop-words{
+  padding: 10px 12px;
+}
+
+.bishop-wrds{
+  margin: 3rem 2rem;
+  margin:7px 12px;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.bishop-name{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.arch-title{
+  font-weight: bold;
+  font-size: 2rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+.archdeaconaries-container{
+  width: 100vw;
+  background-color: #100c13;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.arch-grid{
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 23px;    
+  padding-bottom: 23px;
+}
+
+.arch{
+position: relative;
+min-width: 100px;
+}
+
+.arch img{
+width: 100%;
+}
+
+.arch-name{
+position: absolute;
+top: 0;
+left: o;
+height: 100%;
+width: 100%;
+opacity: 0;   
+transition: all ease-in-out 1s;
+}
+
+.arch:hover .arch-name{
+opacity: 1;
+}
+
+.arch-in{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.582);
+font-size: 34px;
+font-weight: bold;
+color: aliceblue;
 }

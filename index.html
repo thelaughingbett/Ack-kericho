@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="styles/newinterface.css">
-  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
   <title>ACK kericho Diocese</title>
 </head>
 <body>
@@ -157,16 +158,81 @@
             UPCOMING EVENTS
           </div>
           <p>
-            kipkelion leaders training
+            <h2>kipkelion leaders training</h2>
           </p>
         </div>
     
         <div class="time">
           <div class="events-head">
             meet us at : kipkelion Parish <br>
-            on 4th june 2024
+            on 8th june 2024
           </div>
         </div>    
+      </div>
+
+      <div class="mid-container">
+        <div class="bishop-container">
+          <div class="bishop-pic">
+            <img src="assets/images/bishop.jpg" alt="right reverend ernest ngeno">
+          </div>
+          <div class="bishop-words">
+            <span class="mid-header"> FROM THE BISHOP</span>
+            <span class="bishop-wrds">
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut natus repudiandae vero, maiores corporis ea animi aspernatur porro excepturi cupiditate, aut possimus perspiciatis consectetur adipisci dolor ab explicabo tempora eum. Eos quae labore voluptas ratione quam! Deserunt ad et ex tenetur praesentium accusantium? Consectetur, placeat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus nam et, adipisci perferendis suscipit nihil expedita laborum inventore sapiente alias reiciendis quos illo aut dolorum molestiae possimus. Itaque aliquam rem omnis aut quo quidem porro facere culpa, unde autem. Quasi alias magni aperiam totam!
+            </span>
+            <br>
+            <span class="bishop-name">
+              RT REV ERNEST NGENO
+              <br>
+              BISHOP OF THE DIOCESE OF KERICHO
+            </span>     
+          </div>
+        </div>
+      </div>
+
+      <div class="archdeaconaries-container">
+        <p class="arch-title">OUR ARCHDEACONARIES</p>
+        <div class="arch-grid">
+          <div class="arch" data-aos="zoom-in">
+            <img src="assets/images/kericho.jpg" alt="archdeaconary of kericho">
+            <div class="arch-name">
+              <div class="arch-in">
+                Kericho
+              </div>
+            </div>
+          </div>
+      
+          <div class="arch" data-aos="zoom-in">
+            <a href="SotikArchdeaconary.html">
+              <img src="assets/images/sotik.jpg" alt="archdeaconary of kericho">
+            <div class="arch-name">
+              <div class="arch-in">
+                Sotik
+              </div>
+            </div>
+            </a>
+          </div>
+      
+          <div class="arch" data-aos="zoom-in">
+            <img src="assets/images/narok.jpg" alt="archdeaconary of kericho">
+            <div class="arch-name">
+              <div class="arch-in">
+                Narok
+              </div>
+            </div>
+          </div>
+      
+          <div class="arch" data-aos="zoom-in">
+            <img src="assets/images/kericho.jpg" alt="archdeaconary of kericho">
+            <div class="arch-name">
+              <div class="arch-in">
+               Transmara
+              </div>
+            </div>
+          </div>     
+          
+        </div>
       </div>
     </section>
   </main>
@@ -174,6 +240,15 @@
 
 
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        duration: 3000,
+        mirror: true
+      }     
+    );
+  </script>
   <script>
     document.querySelector('.hashbar-container').onclick = () =>{
       console.log('clicked')
