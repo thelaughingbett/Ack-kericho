@@ -320,3 +320,48 @@ font-size: 34px;
 font-weight: bold;
 color: aliceblue;
 }
+
+.thissection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#739284c8;
+  width: 100vw;
+}
+
+.section-words{
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.dept-holder{
+  width: 89vw;
+}
+
+.dept-grid{
+  display: flex;
+  gap: 1rem;
+  padding: 12px;
+}
+
+.dept-container{
+  width: 100%;
+}
+
+.dept-container img{
+  width: 100%;
+}
+
+.verse-of{
+  width: 100vw;
+  position: relative;
+}
+
+.verse-of img{
+  width: ;
+}
