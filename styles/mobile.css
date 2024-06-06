@@ -118,43 +118,6 @@
     padding: 7px;
   }
 
-  .bishop-container{
-    display: block;
-    width: 95vw;
-  }
-
-  .bishop-pic{
-    float: left;
-    margin: 7px;
-  }
-
-  .bishop-pic>img{
-    width: 240px;
-  }
-
-  .archdeaconaries-container{
-    width: 100vw;
-  }
-  
-  .arch-title{
-    font-size: 2rem;
-  }
-
-  .arch-grid{
-    grid-template-columns: 1fr;
-    width: 98vw;
-    gap: 34px;
-    padding: 23px 2px;
-  }
-
-  .arch{
-    width: 100%;
-    height: fit-content;
-  }
-
-  .arch>img{
-    width: 100%;
-  }
 
   .dept-container{
     width: 100vw;
@@ -193,6 +156,14 @@
   .archd-title{
 
     font-size: 1rem;
+  }
+
+  .verse-of > .background-dimmer{
+    width: 100%;
+  }
+
+  .background-words{
+    font-size: .2rem;
   }
 }
 

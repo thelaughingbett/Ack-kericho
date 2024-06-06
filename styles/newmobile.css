@@ -1,0 +1,118 @@
+@media(max-width:772px){
+  .context-menu{
+    width: 78vw;
+    transform: translateX(78vw);
+  }
+
+  .carousel{
+    height: 67vh;
+  }
+  .intro{
+    height: 67vh;
+  }
+
+  .intro img{
+    height: 67vh;
+    object-fit: fill;
+  }
+
+  .intro h2{
+    font-size: 1rem;
+  }
+
+  .intro p{
+    font-size: 1rem;
+  }
+
+  .exp{
+    padding: 2rem;
+  }
+
+  .bishop-container{
+    display: block;
+    width: 95vw;
+  }
+
+  .bishop-pic{
+    float: left;
+    margin: 7px;
+  }
+
+  .bishop-pic>img{
+    width: 240px;
+  }
+
+  .archdeaconaries-container{
+    width: 100vw;
+  }
+  
+  .arch-title{
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .arch-grid{
+    grid-template-columns: 1fr;
+    width: 98vw;
+    gap: 34px;
+    justify-items:center;
+    align-items: center;
+  }
+
+  .arch{
+    width: 80%;
+    height: fit-content;
+  }
+
+  .arch > img{
+    width: 100%;
+  }
+
+  .arch-name{
+    opacity: .8;
+  }
+
+  .verse-of .background-dimmer .background-words p{
+    font-size: 1rem;
+  }
+
+  .verse-of .background-dimmer .background-words h2{
+    font-size: 1rem;
+  }
+
+  .thissection{
+    height: inherit;
+  }
+
+  .section-words{
+    font-size: 1rem;
+  }
+
+  .dept-grid{
+    flex-direction: column;
+
+  }
+
+  .overlay-dept{
+    background-color: #100c13b4;
+  }
+  
+  .overlay{
+    transform: scale(1);
+    opacity: .7;
+  }
+
+  footer{
+    height: inherit;
+  }
+
+  footer img{
+    height: 77vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .footer-holder{
+    flex-direction: column;
+  }
+}

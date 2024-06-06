@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 body{
   display: block;
 }
@@ -42,7 +46,6 @@ header > img{
 
 .context-menu{
   width: 23vw;
-  height: 100vh;
   position: fixed;
   right: 0;
   display: flex;
@@ -265,13 +268,13 @@ header > img{
 .arch-title{
   font-weight: bold;
   font-size: 2rem;
-  color: aliceblue;
+  color: rgb(42, 47, 52);
   text-align: center;
 }
 
 .archdeaconaries-container{
   width: 100vw;
-  background-color: #100c13;
+  background-color: #ffffff00;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,6 +330,7 @@ color: aliceblue;
   align-items: center;
   background-color:#739284c8;
   width: 100vw;
+  height: 400px;
 }
 
 .section-words{
@@ -424,5 +428,48 @@ footer img{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.614);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.overlay-footer a{
+  color: #fff;
+}
+
+.footer-holder{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 12px;  
+}
+
+.footer-container{
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+}
+
+#about-us button{
+  height: 32px;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  outline: none;
+  font-size: .9rem;
+  border-radius: 42px;
+}
+
+.last{
+  position: relative;
+  bottom: 0;
 }
 
