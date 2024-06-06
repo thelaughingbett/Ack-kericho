@@ -8,6 +8,11 @@
   .carousel{
     height: 67vh;
   }
+
+  .carousel-button{
+    background-color: transparent;
+    font-size: 2rem;
+  }
   .intro{
     height: 67vh;
   }
