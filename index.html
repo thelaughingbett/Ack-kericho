@@ -391,6 +391,20 @@
     );
   </script>
   <script>
+
+   const observed = document.body.querySelector('.carousel')
+
+    const observer = new IntersectionObserver(
+      entry=>{
+        const header = document.body.querySelector('header')
+        header.classList.toggle("active-header", entry.isIntersecting)
+      },{
+        threshold: 1,
+      }
+    )
+
+    observer.observe(observed)
+
     document.querySelector('.hashbar-container').onclick = () =>{
       console.log('clicked')
       document.querySelector('.context-menu').dataset.active = 'true'

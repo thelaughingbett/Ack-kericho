@@ -23,10 +23,16 @@ header{
   position: fixed;
   top: 0;
   right: 0;
-  width: 95vw;
+  width: 100vw;
   align-items:center;
   padding: 7px 3% ;
   z-index: 18;
+  transition: all 100ms ease-in;
+}
+
+.active-header{
+  background-color: #353333;
+  transition: all 700ms ease-in;
 }
 
 header > img{
@@ -57,7 +63,7 @@ header > img{
   background-color: aliceblue;
   transition: all ease-in 900ms;
   opacity: 0;
-  transform: translateX(27vw);
+  transform: translateX(30vw);
   align-items: flex-start;
   z-index: 1000;
 }
