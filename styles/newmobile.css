@@ -1,7 +1,4 @@
 @media(max-width:772px){
-  body{
-    overflow: hidden;
-  }
   .context-menu{
     width: 78vw;
     min-height: 100vh;
