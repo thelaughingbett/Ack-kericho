@@ -2,7 +2,7 @@
   .context-menu{
     width: 78vw;
     transform: translateX(78vw);
-    font: 1em sans-serif;
+    font: .6em sans-serif;
   }
 
   .carousel{
