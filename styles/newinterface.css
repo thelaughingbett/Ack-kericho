@@ -172,7 +172,7 @@ header > img{
 .carousel-button{
   position: absolute;
   top: 50%;
-  z-index: 18;
+  z-index: 20;
   font-size: 3rem;
   background-color: rgba(3, 3, 3, 0.178);
   color: aliceblue;
