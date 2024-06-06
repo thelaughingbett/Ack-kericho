@@ -72,6 +72,11 @@
     opacity: .8;
   }
 
+  .verse-of img{
+    height: 300px;
+    object-fit: cover;
+  }
+
   .verse-of .background-dimmer .background-words p{
     font-size: 1rem;
   }
@@ -114,5 +119,6 @@
 
   .footer-holder{
     flex-direction: column;
+    padding: 12px 7px;
   }
 }
