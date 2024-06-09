@@ -161,7 +161,7 @@
 
   .hero ul{
     flex-direction: column;
-    font-size: .9em;
+    font-size: 1rem;
     margin: 7px;
   }
 
@@ -177,6 +177,7 @@
   }
 
   .added  li{
+    font-size: .9rem;
     height: 0;
     transform: scale(0);
   }
