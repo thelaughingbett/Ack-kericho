@@ -6,12 +6,14 @@
   <link rel="icon" type="image/png" href="assets/images/kericho.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles/universal.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/newinterface.css">
   
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles/newmobile.css">
   <script src="https://kit.fontawesome.com/f58d60dffb.js" crossorigin="anonymous"></script>
+  <script src="scripts/universal.js" defer></script>
   
   <title>ACK kericho Diocese</title>
 </head>
@@ -29,7 +31,9 @@
   <div class="context-menu">
     <span class="x">&#88;</span>
     <div class="context-items">
-      cathedral
+      <a href="cathedral.html">
+        cathedral
+      </a>
     </div>
     <div class="context-items">
       departments
@@ -308,6 +312,58 @@
       </div>
       
     </section>
+    <div class="faq-holder" id="faq">
+      <div class="left-faq">
+        <h2>faq</h2>
+        <span>Find out what to expect</span>
+        <p>Learn more about our values and our story as a church by visiting the about us page.</p>
+        <button>
+          ABOUT US
+        </button>
+      </div>
+
+      <div class="right-faq">
+        <ul class="jsRightFaq">
+          <li>What is a church?
+            <p>Ephesians 5:1 refers to the church as "the body of Christ" that God cares for and nourishes as he does himself. 1 Corinthians 12:13 says, "by one Spirit we are all baptized into one body," which shows that the church is a physical manifestation of Christ.
+            <br>
+            2 Corinthians 11:2, Ephesians 5:32, Revelation 19:7, and Revelation 21:9 all refer to the church as the bride of Christ, suggesting a sacred family relationship between Christ and the church. 
+            </p>
+          </li>
+          <li>What happens in a church service?
+            <p>
+              A typical church service may include elements such as singing hymns or worship songs, prayers, readings from the Bible, a sermon or message delivered by a pastor or minister, and sometimes communion (the sharing of bread and wine, representing the body and blood of Jesus Christ).
+            </p>
+          </li>
+          <li>Who leads a church service?
+            <p>
+              A church service is typically led by a pastor, priest, minister, or other religious leader.
+            </p>
+          </li>
+          <li>What denominations of Christianity have churches?
+            <p>
+              There are many denominations within Christianity, each with its own beliefs and practices. Some common denominations include Catholic, Protestant (which includes various branches like Anglican,Baptist, Methodist, Lutheran, Presbyterian, etc.), and Eastern Orthodox.
+            </p>
+          </li>
+          <li>What is the purpose of a church?
+            <p>The church is a representative of jesus on earth
+            </p>
+           <p>
+            Colossians 3:16 - Let the word of Christ dwell in you richly in all wisdom; teaching and admonishing one another in psalms and hymns and spiritual songs, singing with grace in your hearts to the Lord.</p>
+
+            <p>Matthew 28:19-20 - Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost:   </p>
+            
+           <p> 1 Peter 2:9-10 - But ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people; that ye should shew forth the praises of him who hath called you out of darkness into his marvellous light
+           </p>
+          </li>
+          <li>Can anyone attend a church service?
+            <p>
+              Yes, most churches welcome visitors and newcomers to attend their services regardless of their religious background.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -390,65 +446,9 @@
       }     
     );
   </script>
-  <script>
+  <script src="scripts/main.js">
 
-   const observed = document.querySelector('.intro')
-
-
-    const observer = new IntersectionObserver(
-      entry=>{
-        const header = document.body.querySelector('header')
-        console.log(header)
-        header.classList.toggle("active-header", entry.isIntersecting)
-      },{
-        threshold: 0.5,
-      }
-    )
-
-    observer.observe(observed)
-
-    document.querySelector('.hashbar-container').onclick = () =>{
-      console.log('clicked')
-      document.querySelector('.context-menu').dataset.active = 'true'
-    }
-
-    document.querySelector('.x').onclick = () =>{
-      console.log('clicked')
-      document.querySelector('.context-menu').removeAttribute('data-active')
-    }
-
-    document.querySelectorAll('.added-context').forEach( context =>{
-      context.addEventListener('click', ()=>{
-        context.closest('.context-items').querySelector('.extra').dataset.active !== 'true'?
-        context.closest('.context-items').querySelector('.extra').dataset.active = 'true':context.closest('.context-items').querySelector('.extra').dataset.active = 'false'
-      })
-    })
-
-    setInterval( function animate(){
-      slides = [...document.querySelector('.carousel').querySelectorAll('.intro')]
-      activeSlide = document.querySelector('.carousel').querySelector('[data-active]')
-      let offset = slides.indexOf(activeSlide)
-      offset += 1
-      if(offset >= slides.length) offset = 0
-      nextSlide = slides[offset]
-      nextSlide.dataset.active = 'true'
-      delete activeSlide.dataset.active
-    },10000)
-
-    buttons = document.querySelectorAll('[data-carousel]')
-    buttons.forEach(button => {
-      button.addEventListener('click', ()=>{
-        slides = [...button.closest('.carousel').querySelectorAll('.intro')]
-        activeSlide = button.closest('.carousel').querySelector('[data-active]')       
-        let offset = slides.indexOf(activeSlide)
-        button.dataset.carousel === 'next' ?offset += 1 : offset -=1
-        if(offset >= slides.length) offset = 0
-        if (offset < 0) offset = slides.length - 1
-        nextSlide = slides[offset]
-        nextSlide.dataset.active = 'true'
-        delete activeSlide.dataset.active
-      })
-    })
+  
   </script>
 </body>
 </html>

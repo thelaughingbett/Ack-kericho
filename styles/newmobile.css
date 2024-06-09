@@ -68,7 +68,7 @@
 
   .arch{
     width: 80%;
-    height: fit-content;
+    height: inherit;
   }
 
   .arch > img{
@@ -128,5 +128,154 @@
     flex-direction: column;
     padding: 12% 7px;
     justify-content: center;
+  }
+
+  .hashbar-container{
+    display: block;
+    position: absolute;
+    align-self: center;
+    right: 0;
+  }
+
+  .holy-trinity{
+    font-size: .7rem;
+  }
+
+  .hero{
+    position: absolute;
+    top: 97px;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: end;
+    left: 50%;
+    transform: translate(-50%, -40vh);
+    transition: all ease 500ms;
+    height: 0;
+  }
+
+  .hero[data-active]{
+    transform: translate(-50%, 0);
+    height: inherit;
+  }
+
+  .hero ul{
+    flex-direction: column;
+    font-size: .6em;
+    margin: 7px;
+  }
+
+  .socials ul{
+    flex-direction: row;
+  }
+
+  .added {
+    position: static;
+    height: 0;
+    transform: scale(0);
+    padding: 9px;
+  }
+
+  .added  li{
+    height: 0;
+    transform: scale(0);
+  }
+
+  .added[data-active]{
+    height: inherit;
+    transform: scale(1);
+  }
+
+  .added[data-active] li{
+    height: inherit;
+    transform: scale(1);
+  }
+
+  .fa-chevron-down[active]{
+    transform: rotate(180deg);
+    transition: all ease-in 300ms 300ms;
+  }
+
+  .cathedral-dimmer{
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+  }
+
+  .banner-int{
+    width: 45vw;
+    gap: 12px;
+  }
+
+  .banner-int h2{
+    font: .6em sans-serif;
+  }
+  
+  .banner-intro h2{
+    font-size: 1.9em;
+    text-align: center;
+  }
+
+  .welcoming-message{
+    height: inherit;
+  }
+
+  .holder-welcome{
+    padding: 56px 7px;
+
+  }
+
+  .holder-welcome p{
+    font-size: 1em;
+  }
+ 
+  .cathedral-events{
+    height: inherit;
+    padding: 37px 23px;
+  }
+
+  .time,.events-con,.month,.day{
+    font-size: .9em;
+  }
+
+  .cathedral-events>span{
+    font-size: 1em;
+  }
+
+  .more-about-anglican{
+    flex-wrap: wrap;    
+  }
+
+  .inner-holder button{
+    width: 100px;
+    font-size: .5em;
+  }
+
+  .another-section{
+    flex-wrap: wrap-reverse;
+  }
+
+  .the-other h2,.inner-holder h2{
+    font-size: 1rem;
+  }
+
+  .the-other p,.inner-holder p{
+    font-size: .6rem;
+  }
+
+  .faq-holder{
+    flex-wrap: wrap;
+  }
+
+  .left-faq{
+    padding: 40px ;
+  }
+
+  .right-faq{
+    width: 100vw;
+    font-size: 1rem;
+  }
+
+  .right-faq ul li p{
+    font-size: .7rem;
   }
 }

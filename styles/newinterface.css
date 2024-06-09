@@ -1,14 +1,3 @@
-*{
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a{
-  text-decoration: none;
-}
-
 body{
   display: block;
 }
@@ -23,6 +12,7 @@ header{
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   width: 100vw;
   align-items:center;
   padding: 7px 3% ;
@@ -66,6 +56,10 @@ header > img{
   transform: translateX(30vw);
   align-items: flex-start;
   z-index: 1000;
+}
+
+.context-menu a{
+  color: black;
 }
 
 .context-menu[data-active]{
@@ -145,29 +139,7 @@ header > img{
   transition: all 900ms 0ms;
 }
 
-.background-dimmer{
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
 
-.background-dimmer  h2{
-  font-size: 3rem;
-}
-
-.background-dimmer p{
-   font-size: 2rem;
-}
-
-.background-words{
-  width: 54vw;
-}
 
 .carousel-button{
   position: absolute;
@@ -409,14 +381,7 @@ color: aliceblue;
   width: 30px;
 }
 
-.verse-of{
-  width: 100vw;
-  position: relative;
-}
 
-.verse-of img{
-  width: 100%;
-}
 
 footer{
   width: 100vw;
@@ -475,8 +440,5 @@ footer img{
   border-radius: 42px;
 }
 
-.last{
-  position: relative;
-  bottom: 0;
-}
+
 

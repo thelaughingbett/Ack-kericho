@@ -1,0 +1,397 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  justify-content: stretch;
+  align-items: baseline;
+  background-color: #fff ;
+}
+
+.holy-trinity{
+  background-color: rgba(42, 10, 10, 0.995) ;
+  font-size: 2rem;
+  height: 97PX;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 2px 12px;
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 12px 23px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.hero ul{
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  align-items:center ;
+  justify-content: flex-start;
+}
+
+
+
+.socials ul{
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  align-items:center ;
+  justify-content: center;
+  justify-self: flex-end;
+}
+
+.hashbar-container{
+  display: none;
+}
+
+.hashbar{
+  width:37px;
+  height: 5px;
+  background-color: gray;
+  margin: 10px;
+}
+
+.added {
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  display: flex;
+  height: 0;
+  transform: scale(0);
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.added  li{
+  transform: scale(0);
+}
+
+.added[data-active]{
+  height: inherit;
+  transform: scale(1);
+}
+
+.added[data-active] li{
+  transform: scale(1);
+}
+
+.fa-chevron-down[active]{
+  transform: rotate(180deg);
+  transition: all ease-in 300ms 300ms;
+}
+
+.cathedral-banner{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/images/cathedral-mock.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  z-index: -20;
+}
+
+.cathedral-dimmer{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner-intro ,
+.banner-int{
+  text-transform: uppercase;
+  color: #fff;
+  font:300 sans-serif;
+}
+
+.banner-int{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  width: 43vw;
+  height: 34vh;
+  background-color:#FFFFFF;
+  color: black;
+}
+
+.banner-int h2{
+  font-weight:bold;
+  font: 2em sans-serif;
+}
+
+.banner-intro h2{
+  font-size: 3rem;
+}
+
+.welcoming-message{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.holder-welcome{
+  width: 64vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.holder-welcome span{
+  font-size: 1rem;
+}
+
+.holder-welcome p{
+  font-size: 2rem;
+  color: rgba(49, 47, 47, 0.674);
+}
+
+.holder-welcome button{
+  width: 200px;
+  height: 67px;
+  background-color: rgb(150, 150, 55);
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.cathedral-events h2{
+  color: #FFFFFF;
+}
+
+.events-con{
+  display: flex;
+  gap: 32px;
+  flex-grow: 1;
+}
+
+.date{
+  text-align: center;
+}
+
+.month{
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.day{
+  font-size: 42px;
+}
+
+.events-fold{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+
+.event{
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.events-con{
+  font-size: 24px;
+}
+
+.cathedral-events{
+  width: 100vw;
+  align-items: center;
+  height: 46vh;
+  gap: 78px;
+}
+
+.cathedral-events>span{
+  font-size: 42px;
+}
+
+.cathedral-events,.date,.event{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #A8744F;
+}
+
+.more-about-anglican{
+  display: flex;
+  
+}
+
+.holt{
+  flex-grow: 1;
+}
+
+.holt img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.inner-holder span{
+  font-size: 14px;
+}
+
+.inner-holder h2{
+  font-size: 62px;
+}
+
+.inner-holder p{
+  font-size: 18px;
+}
+
+.the-words{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-holder{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #222222;
+  padding: 2rem;
+}
+
+.inner-holder button{
+  width: 300px;
+  border: none;
+  outline: none;
+  background-color: #F1B253;
+  align-self: flex-start;
+  transition: all ease 500ms;
+  padding: 12px 7px;
+  color: #222222;
+}
+
+.inner-holder button:hover{
+  background-color: #22254D;
+  color: #FFFFFF;
+}
+
+.another-section{
+  background-color: #343E77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 3rem 23px;
+}
+
+.provost-img{
+ width: 640px;
+}
+
+.provost-img img{
+  width: 100%;
+ 
+}
+
+.the-other{
+  color:#FFFFFF;
+  width: 56vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.the-other span{
+  font-size: 14px;
+  align-self: center;
+}
+
+.the-other h2{
+  font-size: 62px;
+}
+
+.the-other p{
+  font-size: 18px;
+}
+
+.map{
+  width: 100vw;
+}
+
+.map iframe{
+  display: none;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.map iframe[data-active]{
+  display: block;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222222;
+  color: #FFFFFF99;
+  font-size: 18px;
+  padding: 97px 40px;
+}
+
+footer h2{
+  color: #FFFFFF;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+footer .fa{
+  font-size: 18px;
+}
+
+footer ul li a{
+  color: #FFFFFF99;
+}
+
+footer p{
+  cursor: pointer;
+}
+
+.footer-elements{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+@media(max-width: 772px) {
+  footer{
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 23px;
+  }
+}
+

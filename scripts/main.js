@@ -1,44 +1,60 @@
-//hash-menu functionality
+const observed = document.querySelector('.intro')
+
+
+const observer = new IntersectionObserver(
+  entry=>{
+    const header = document.body.querySelector('header')
+    header.classList.toggle("active-header", entry.isIntersecting)
+  },{
+    threshold: 0.5,
+  }
+)
+
+observer.observe(observed)
+
+
+
 document.querySelector('.hashbar-container').onclick = () =>{
-  if(document.querySelector('.hashbar-container').dataset.clicked !== 'true'){
-    document.querySelector('.hashbar-container').dataset.clicked = 'true';
-    document.querySelector('.top-cont').style.display = 'flex';
-    document.querySelectorAll('.header-info').forEach( header  =>{
-      header.classList.add('header-inf')
-      header.classList.remove('header-info')
-    }    
-    )
-    //dropdown-menu functionality
-    //there is a bug here fix it 
-    document.querySelectorAll('.header-inf').forEach( header =>{
-      header.addEventListener('click', ()=>{
-        if(header.querySelector('.extension-info').dataset.active !== 'true'){
-
-          document.querySelectorAll('.extension-info').forEach(info=>{
-            info.removeAttribute('data-active')
-            console.log('activated')
-          } )
-          header.querySelector('.extension-info').dataset.active = 'true'
-          console.log('true')
-
-        }else{
-
-          header.querySelector('.extension-info').removeAttribute('data-active')
-          console.log('nah')
-        }
-      })
-    })    
-  }else{
-    document.querySelector('.hashbar-container').dataset.clicked = 'false';
-    document.querySelector('.top-cont').style.display = 'none';
-    document.querySelectorAll('.header-info').forEach( header  =>{
-      header.classList.add('header-info')
-    } )
-    document.querySelectorAll('.extension-info').forEach(info=>{
-      info.removeAttribute('data-active')
-    } )  
-  } 
+  document.querySelector('.context-menu').dataset.active = 'true'
 }
+
+document.querySelector('.x').onclick = () =>{
+  document.querySelector('.context-menu').removeAttribute('data-active')
+}
+
+document.querySelectorAll('.added-context').forEach( context =>{
+  context.addEventListener('click', ()=>{
+    context.closest('.context-items').querySelector('.extra').dataset.active !== 'true'?
+    context.closest('.context-items').querySelector('.extra').dataset.active = 'true':context.closest('.context-items').querySelector('.extra').dataset.active = 'false'
+  })
+})
+
+setInterval( function animate(){
+  slides = [...document.querySelector('.carousel').querySelectorAll('.intro')]
+  activeSlide = document.querySelector('.carousel').querySelector('[data-active]')
+  let offset = slides.indexOf(activeSlide)
+  offset += 1
+  if(offset >= slides.length) offset = 0
+  nextSlide = slides[offset]
+  nextSlide.dataset.active = 'true'
+  delete activeSlide.dataset.active
+},10000)
+
+buttons = document.querySelectorAll('[data-carousel]')
+buttons.forEach(button => {
+  button.addEventListener('click', ()=>{
+    slides = [...button.closest('.carousel').querySelectorAll('.intro')]
+    activeSlide = button.closest('.carousel').querySelector('[data-active]')       
+    let offset = slides.indexOf(activeSlide)
+    button.dataset.carousel === 'next' ?offset += 1 : offset -=1
+    if(offset >= slides.length) offset = 0
+    if (offset < 0) offset = slides.length - 1
+    nextSlide = slides[offset]
+    nextSlide.dataset.active = 'true'
+    delete activeSlide.dataset.active
+  })
+})
+   
 
 
 const kericho = [
