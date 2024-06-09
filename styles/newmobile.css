@@ -171,19 +171,19 @@
 
   .added {
     position: static;
-    height: 0;
+    display: none;
     transform: scale(0);
     padding: 9px;
   }
 
   .added  li{
     font-size: .9rem;
-    height: 0;
     transform: scale(0);
   }
 
   .added[data-active]{
-    height: inherit;
+   
+    display: block;
     transform: scale(1);
   }
 
