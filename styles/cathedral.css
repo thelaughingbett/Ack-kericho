@@ -55,16 +55,7 @@ header{
   justify-self: flex-end;
 }
 
-.hashbar-container{
-  display: none;
-}
 
-.hashbar{
-  width:37px;
-  height: 5px;
-  background-color: gray;
-  margin: 10px;
-}
 
 .added {
   flex-direction: column;

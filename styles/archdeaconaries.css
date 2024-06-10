@@ -1,121 +1,251 @@
-.back{
-  object-fit: contain;
-  object-position: center;
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 7PX 40PX 7PX 40px;
+  position: fixed;
+  background-color: aliceblue;
+  z-index: 1000;
 }
 
-.archdeacon-container{
-  margin-top: 100px;
-  height: 93vh;
-  position: relative;
-}
-
-.archdeacon-container img{
-  width: 100%;
-  height: inherit;
-}
-
-.archdeacon-holder{
-  position: absolute;
-  top: 0;
-  left: 0;
+header a{
   display: flex;
   align-items: center;
-  justify-content: center;
+  color: #222222;
+}
+
+header img{
+  height: 97px;
+}
+
+header ul{
+  height: 97px;
+  display: flex;
   gap: 23px;
-  width: 100%;
-  height: 100%;
-  align-self: center;
-  float: right;
+  align-items: center;
+  cursor: pointer;
+
 }
 
-.archdeacon-holder img{
-  width: 573px;
-  object-fit: contain;
-  object-position: center;
-}
-
-.arch{
+.archdeacons-message{
   display: flex;
-  justify-content: center;
+  background-color: #5C2228;
+  color: #222222;
+  padding: 130px 70px;
+  align-items: center;
+}
+
+.archdeacons-message img{
+  width: 700px;
+  margin-top: 34px;
+}
+
+.message{
+  height: 87vh;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 40px 60px;
+  gap: 45px;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.archd-title{
-  font-size: 20px;
-  font-weight: bold;
-  font-style: oblique;
+.message span{
+  font-size: 14px;
 }
 
-.parish{
-  position: relative;
+.message h2{
+  font-size: 62px;
 }
 
-.parish-desc{
-  position: absolute;
-  top: 0;
-  left: 0;
+.message p{
+  font-size: 18px;
+  width: 400px;
+  justify-self: flex-end;
+}
+
+.messag{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.larger-holder{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.492);
-  padding: 23px;
-  transform: scale(0) translate(0);
-  transition: all 1s ease-in-out;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 100vw;
+  gap: 50px;
 }
 
-.larger-holder[data-active]{
-  transform: scale(1) translateY(-50%) translateX(-50%);
-}
-
-.con{
-  display: inline;
-  width: 900px;
-  border: 1px solid;
-  padding: 1.2rem;
-  background-color: rgba(221, 160, 221, 0.879);
+.messag img{
+  width: 500px;
+  position: relative;
+  top: -43px;
   
 }
 
-table{
-  display: block;
-  float: right;
-  border: 1px solid;
-  border-spacing: 0;
-  max-width: 400px;
-}
-tr{
-  width: 100%;
-}
-td{
-  border: 1px solid;
-  padding: 3px 5px;
+.themessage{
+  display: flex;
+  flex-direction: column;
+  width: 47vw;
+  justify-self: flex-end;
+  gap: 43px;
 }
 
-.head{
-  text-align: left;
-  max-width: 112px;
+.themessage h2{
+  font-size: 62px;
+  font-weight: 300;
 }
 
-.x{
-  position:absolute;
-  top: 5px;
-  width: 17px;
-  height: 17px;
-  right: 5px;
-  border-radius: 50%;
+.themessage p{
+  font-size: 18px;
+  color: rgba(49, 47, 47, 0.674);
+}
+
+.short{
+  display:  flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 43px;
+  padding: 45px 12px;
+}
+
+.short h2{
+  font-size: 56px;
+}
+
+.short ul{
+  display: flex;
+  justify-content: space-around;
+  font-size: 23px;
+  gap: 45px;
+}
+
+.short a{
+  color: rgba(49, 47, 47, 0.674);
+}
+
+.short li{
+  border-right: 1px solid rgba(49, 47, 47, 0.674);
+  padding-right: 23px;
+}
+
+.parishes{
   background-color: aliceblue;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 43px;
+}
+
+.parishes > h2{
+  font-size: 63px;
+  font-weight: 300;
+}
+
+.parish{
+  width: 67vw;
+  padding-top: 12px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid  rgba(49, 47, 47, 0.674);
+  transition: all ease 300ms;
+}
+
+.parish h2{
+  font-size: 45px;
   cursor: pointer;
 }
 
-.relative{
-  position: relative;
+.parish p{
+  margin-top: 23px;
+  display: none;
+}
+
+.parish p[data-active]{
+  display: block;
+}
+
+.final{
+  display: flex;
+}
+
+.final img{
+  width: 900px;
+}
+
+.more-p{
+  background-color: #5C2228;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-p p{
+  width: 34vw;
+  color: #FFFFFF;
+  font-size: 45px;
+}
+
+.more-p span{
+  font-size: 23px;
+}
+
+@media(max-width:772px){
+
+  .hashbar-container{
+    padding: 20px 12px;
+  }
+
+  header{
+    padding: 10px 2px;
+  }
+
+  header a{
+    font-size: .6rem;
+  }
+
+  header ul{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    justify-content: center;
+    background-color: aqua;
+    z-index: -2;
+    opacity: 0;
+    transition: all ease 400ms;
+  }
+
+  header ul a{
+    font-size: 1rem;
+  }
+
+  header ul[data-active]{
+    opacity: 1;
+    top: 100px;
+  }
+  
+  .parishes h2{
+    font-size: 1rem;
+  }
+
+  .parish p{
+    font-size: .9rem;
+  }
+
+  .final{
+    flex-wrap: wrap-reverse;
+  }
+
+  .more-p{
+    gap: 12px;
+    padding: 34px 12px;
+  }
+
+  .more-p p{
+    width: 98vw;
+    font-size: 2rem;
+  }
 }

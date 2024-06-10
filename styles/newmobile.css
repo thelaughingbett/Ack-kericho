@@ -280,4 +280,88 @@
   .right-faq ul li p{
     font-size: .7rem;
   }
+
+  .archdeacons-message{
+    flex-wrap: wrap;
+    padding: 130px 13px;
+    gap: 23px;
+  }
+
+  .archdeacons-message img{
+    justify-self: center;
+    margin-top: 12px;
+    width: 300px;
+    align-self: center;
+  }
+
+  .message{
+    height: inherit;
+    width: 78vw;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+
+  .message span{
+    font:  .9rem;
+  }
+
+  .message h2{
+    font-size: 1rem;
+  }
+
+  .message p{
+    width: 54vw;
+    font-size: .7rem;
+    justify-self: center
+  }
+
+  .messag{
+    width: 100vw;
+    flex-wrap: wrap;
+    padding: 0  10px 10px 34px;
+    gap: 20px;
+  }
+
+  .messag img{
+    width: 300px;
+  }
+
+  .themessage{
+    width: 100vw;
+  }
+
+  .themessage h2{
+    font-size: 2rem;    
+  }
+
+  .themessage p{
+    padding-bottom: 12px;
+    font-size: 1rem;
+  }
+
+  .short {
+    padding-left: 23px;
+  }
+
+  .short h2{
+    font-size: 2rem;
+  }
+
+  .short ul{
+    font-size: .8rem;
+    flex-direction: column;
+    gap: 12px;
+    align-self: center;
+  }
+
+  .short li{
+    border-right: none;
+    border-bottom: 1px solid rgba(49, 47, 47, 0.674);
+    padding: 12px 6px;
+  }
+
+  .discover-more{
+    flex-direction: column;
+    gap: 34px;
+  }
 }

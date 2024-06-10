@@ -10,6 +10,17 @@ a{
   text-decoration: none;
 }
 
+.hashbar-container{
+  display: none;
+}
+
+.hashbar{
+  width:37px;
+  height: 5px;
+  background-color: gray;
+  margin: 10px;
+}
+
 .verse-of{
   width: 100vw;
   position: relative;

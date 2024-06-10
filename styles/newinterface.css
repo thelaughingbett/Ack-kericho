@@ -440,5 +440,46 @@ footer img{
   border-radius: 42px;
 }
 
+.discover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 12px;
+  gap: 56px;
+  background-color: aliceblue;
+}
 
+.discover h2{
+  font-size: 62px;
+  font-weight: 400;
+}
 
+.discover-more{
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  background-color: aliceblue;
+}
+
+.discover-holders, 
+.discover-holders a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.discover-holders img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: fill;
+  object-position: center;
+}
+
+.discover-holders span{
+  font-size: 18px;
+  color: #332a2a;
+}
