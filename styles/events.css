@@ -1,0 +1,104 @@
+.active-header{
+  position:sticky;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  background-color: #f0f4f7;
+  padding:  .3rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+}
+
+.active-header img{
+  height: 97px;
+}
+
+.hashbar-container{
+  display: block;
+}
+
+.hashbar{
+  width: 56px ;
+  height: 6px;
+  border-radius: 34px;
+  background-color: gray;
+}
+
+.upper-section{
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ced6dc;
+}
+
+.upper-section h2{
+  font-size: 62px;
+}
+
+.upper-section p{
+  font-size: 23px;
+  color: #797e81;
+  text-align: center;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+main .table {
+  border-spacing: 53px;
+}
+
+.cal{
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+}
+
+.cal .mon{
+  text-transform: uppercase;
+}
+
+.event-holder{
+  display: flex;
+  flex-direction: column;
+}
+
+.event-holder .date{
+  font-size: 24px;
+  color: #797e81;
+  align-self: flex-start;
+}
+
+.event-holder .event{
+  font-size: 45px;
+}
+
+.event-holder .venue{
+  font-size: 23px;
+}
+
+.orgdept{
+  font-size: 23px;
+}
+
+@media(max-width: 772px){
+  .cal{
+    font-size: 1rem;
+  }
+
+  .event-holder .event{
+    font-size: 1rem;
+  }
+
+  .event-holder .date,
+  .event-holder .venue,
+  .orgdept{
+    font-size: .9rem;
+  }
+}

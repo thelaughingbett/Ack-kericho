@@ -31,91 +31,49 @@
   <div class="context-menu">
     <span class="x">&#88;</span>
     <div class="context-items">
-      <a href="cathedral.html">
+      <a href="./cathedral.html">
         cathedral
       </a>
     </div>
-    <div class="context-items">
-      departments
-      <span class="added-context">
-        &#10005;
-      </span>
-      <div class="extra">
-        <ul>
-          <li>Mother's Union</li>
-          <li>
-            KAMA
-          </li>
-          <li>
-            KAYO
-          </li>
-          <li>
-            Sunday School
-          </li>
-        </ul>
-      </div>
+    <div class="context-items clickable">
+      <a href="#dept">
+        departments
+      </a>
     </div>
-    <div class="context-items">
-      missions
-      <span class="added-context">
-        &#10005;
-      </span>
-      <div class="extra">
-        <ul>
-          <li>social</li>
-          <li>
-            ministy
-          </li>
-        </ul>
-      </div>
+    <div class="context-items clickable">
+      <a href="https://www.adssouthrift.org/">
+        Missions
+      </a>
     </div>
-    <div class="context-items">
-      Archdeaconaries
-      <span class="added-context">
-        &#10005;
-      </span>
-      <div class="extra">
-        <ul>
-          <li>Kericho</li>
-          <li>
-           <a href="SotikArchdeaconary.html">
-            Sotik
-           </a>
-          </li>
-          <li>Narok</li>
-          <li>Transmara</li>
-        </ul>
-      </div>
+    <div class="context-items clickable">
+      <a href="#arch">
+        Archdeaconaries
+      </a>
     </div>
-    <div class="context-items">
-      Clergy
+    <div class="context-items clickable">
+      <a href="clergy.html">
+        Clergy
+      </a>
     </div>
-    <div class="context-items">
+    <div class="context-items clickable">
+     <a href="events.html">
       Events
+     </a>
     </div>
-    <div class="context-items">
-      Facilities
-       <span class="added-context">
-        &#10005;
-       </span>
-      <div class="extra" >
-        <ul>
-          <li>Hospitality</li>
-          <li>
-            Schools
-          </li>
-        </ul>
-      </div>
+    <div class="context-items clickable">
+      <a href="#facilities">
+        Facilities
+      </a>
     </div>
-    <div class="context-items">
+    <div class="context-items clickable">
       Gallery
     </div>
-    <div class="context-items">
+    <div class="context-items clickable">
       About Us
     </div>
   </div>
 
-  <main>
+  <main class="main">
     <section>
       <div class="carousel">
         <div class="carousel-button" data-carousel = "prev">&#8656;</div>
@@ -203,16 +161,18 @@
         </div>
       </div>
 
-      <div class="archdeaconaries-container">
+      <div class="archdeaconaries-container" id="arch">
         <p class="arch-title">OUR ARCHDEACONARIES</p>
         <div class="arch-grid">
           <div class="arch" data-aos="zoom-in">
-            <img src="assets/images/kericho.jpg" alt="archdeaconary of kericho">
+            <a href="kerichoarchdeaconary.html">
+              <img src="assets/images/kericho.jpg" alt="archdeaconary of kericho">
             <div class="arch-name">
               <div class="arch-in">
                 Kericho
               </div>
             </div>
+            </a>
           </div>
       
           <div class="arch" data-aos="zoom-in">
@@ -227,21 +187,25 @@
           </div>
       
           <div class="arch" data-aos="zoom-in">
-            <img src="assets/images/narok.jpg" alt="archdeaconary of kericho">
+            <a href="Narok.html">
+              <img src="assets/images/narok.jpg" alt="archdeaconary of kericho">
             <div class="arch-name">
               <div class="arch-in">
                 Narok
               </div>
             </div>
+            </a>
           </div>
       
           <div class="arch" data-aos="zoom-in">
-            <img src="assets/images/kericho.jpg" alt="archdeaconary of kericho">
+            <a href="kilgoris.html">
+              <img src="assets/images/kericho.jpg" alt="archdeaconary of kericho">
             <div class="arch-name">
               <div class="arch-in">
                Transmara
               </div>
             </div>
+            </a>
           </div>     
           
         </div>
@@ -265,7 +229,24 @@
         </div>
       </div>
 
-      <div class="thissection">
+      
+      <section class="short">
+        <h2>Our foundational Beliefs </h2>
+        <ul>
+          <li><a href="https://www.anglicancommunion.org/theology/doctrine/foundations.aspx">
+            Scriptures
+          </a></li>
+          <li><a href="https://www.anglicancommunion.org/theology/doctrine/foundations.aspx">
+            Ancient Creeds
+          </a></li>
+          <li><a href="https://www.anglicancommunion.org/theology/doctrine/foundations.aspx">
+            Distinctive ways of worship
+          </a></li>
+        </ul>
+      </section>
+  
+
+      <div class="thissection" id="dept">
         <div class="section-words">
           our departments
           <br>
@@ -293,12 +274,16 @@
             </div>
             <div class="dept-container">
               <img src="assets/images/youths.jpg" alt="">
-              <div class="overlay-dept">
-                <img src="assets/images/kayo.png" alt="">
-                <div class="overlay">
-                  KAYO
+              <a href="kayo.html">
+                <div class="overlay-dept">
+                  <img src="assets/images/kayo.png" alt="">
+                  <a href="kayo.html">
+                    <div class="overlay">
+                      KAYO
+                    </div>
+                  </a>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="dept-container">
               <img src="assets/images/sunday school.jpg" alt="">
@@ -369,7 +354,7 @@
       </div>
     </div>
 
-    <section class="discover">
+    <section class="discover" id="facilities">
       <h2>Discover More</h2>
       <div class="discover-more">
         <div class="discover-holders">

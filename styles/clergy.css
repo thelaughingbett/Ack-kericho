@@ -1,0 +1,147 @@
+.active-header{
+  position:sticky;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  background-color: #f0f4f7;
+  padding:  .3rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+}
+
+.active-header img{
+  height: 97px;
+}
+
+.hashbar-container{
+  display: block;
+}
+
+.hashbar{
+  width: 56px ;
+  height: 6px;
+  border-radius: 34px;
+  background-color: gray;
+}
+
+.upper-section{
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ced6dc;
+}
+
+.upper-section h2{
+  font-size: 62px;
+}
+
+.upper-section p{
+  font-size: 23px;
+  color: #797e81;
+  text-align: center;
+}
+
+.introd{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7rem 2rem;
+}
+
+
+.img-section{
+  position: relative;
+  width: 500px;
+  height: 600px;
+}
+
+.introd .img-section img{
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  
+}
+
+.introd .img-section .verse{
+  position: absolute;
+  bottom: 7px;
+  right: -100px;
+  width: 300px;
+  padding: 23px 36px;
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.introd .img-section .verse p{
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.introd .rando{
+  width: 700px;
+}
+
+.rando h2{
+  font-size: 62px;
+}
+
+.rando h3{
+  font-size: 23px;
+}
+
+.rando p{
+  font-size: 24px;
+  color: #858689;
+  margin-top: 34px;
+}
+
+.sect{
+  height: 100px;
+  text-align: center;
+  font-size: 34px;
+}
+
+.clergy-grid{
+  background-color: #f0f4f7;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 34px;
+  padding: 34px 78px;
+}
+
+.clergy-holder img{
+  width: 100%;
+}
+
+.clergy-holder h2{
+  font-size: 23px;
+  text-transform: uppercase;
+  font-family:sans-serif;
+}
+
+.clergy-holder p{
+  color: #858689;
+}
+.clergy-holder a{
+  color: #40434c;
+}
+
+@media(max-width:772px){
+ .clergy-grid{
+  grid-template-columns: 1fr 1fr;
+  padding: 34px 43px;
+ }
+
+ .clergy-holder h2{
+  font-size: 1rem;
+ }
+
+ .clergy-holder p{
+  font-size: .9rem;
+ }
+}

@@ -16,10 +16,12 @@ observer.observe(observed)
 
 document.querySelector('.hashbar-container').onclick = () =>{
   document.querySelector('.context-menu').dataset.active = 'true'
+  document.body.dataset.menu = 'true'
 }
 
 document.querySelector('.x').onclick = () =>{
   document.querySelector('.context-menu').removeAttribute('data-active')
+  document.body.removeAttribute('data-menu')
 }
 
 document.querySelectorAll('.added-context').forEach( context =>{
@@ -28,6 +30,14 @@ document.querySelectorAll('.added-context').forEach( context =>{
     context.closest('.context-items').querySelector('.extra').dataset.active = 'true':context.closest('.context-items').querySelector('.extra').dataset.active = 'false'
   })
 })
+
+ const clickable = document.querySelectorAll('.clickable')
+ clickable.forEach( clickable =>{
+  clickable.addEventListener('click', ()=>{
+    document.querySelector('.context-menu').removeAttribute('data-active')
+    document.body.removeAttribute('data-menu')
+  })
+ })
 
 setInterval( function animate(){
   slides = [...document.querySelector('.carousel').querySelectorAll('.intro')]

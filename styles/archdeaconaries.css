@@ -99,34 +99,6 @@ header ul{
   color: rgba(49, 47, 47, 0.674);
 }
 
-.short{
-  display:  flex;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
-  gap: 43px;
-  padding: 45px 12px;
-}
-
-.short h2{
-  font-size: 56px;
-}
-
-.short ul{
-  display: flex;
-  justify-content: space-around;
-  font-size: 23px;
-  gap: 45px;
-}
-
-.short a{
-  color: rgba(49, 47, 47, 0.674);
-}
-
-.short li{
-  border-right: 1px solid rgba(49, 47, 47, 0.674);
-  padding-right: 23px;
-}
 
 .parishes{
   background-color: aliceblue;

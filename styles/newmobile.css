@@ -3,7 +3,8 @@
     width: 78vw;
     min-height: 100vh;
     transform: translateX(78vw);
-    font: .6em sans-serif;
+    padding-top: 130px;
+    font: 1em sans-serif;
   }
 
   .carousel{
@@ -278,7 +279,7 @@
   }
 
   .right-faq ul li p{
-    font-size: .7rem;
+    font-size: 1rem;
   }
 
   .archdeacons-message{
@@ -363,5 +364,50 @@
   .discover-more{
     flex-direction: column;
     gap: 34px;
+  }
+
+  .upper-section{
+    height: 100px;
+  }
+
+  .upper-section h2{
+    font-size: 1.5rem;
+  }
+
+  .upper-section p{
+    font-size: .9rem;
+  }
+
+  .introd{
+    flex-wrap: wrap;
+    gap: 23px;
+    padding: 1rem;
+  }
+
+  .introd .img-section {
+    height: 400px;
+  }
+
+  .introd .img-section .verse{
+    right: 0;
+    bottom: 0;
+  }
+
+  .introd .img-section .verse p{
+    font-size: 1rem;
+  }
+
+  .introd .rando {
+    padding: 2rem;
+  }
+
+  .sect{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 63px;
   }
 }
