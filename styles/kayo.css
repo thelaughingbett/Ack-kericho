@@ -77,11 +77,11 @@ main{
 
   .make{
     flex-wrap: wrap;
-    padding: 40px 56px;
+    padding: 40px 26px;
   }
 
   .make img{
-    width: 300px;
+    width: 00px;
     height: 400px;
   }
 
