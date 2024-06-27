@@ -1,0 +1,175 @@
+header{
+  width: 100vw;
+  height: 100vh;
+  position: static;
+}
+
+header img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo{
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  color: rgb(180, 192, 177);
+}
+
+.overlay-sch{
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  width: 44vw;
+  color: #ffffff;
+  background-color: rgb(186, 196, 205);
+  padding: 23px;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 100px 350px;
+  text-align: center;
+}
+
+.intro h2{
+  font-size: 65px;
+  font-weight: 300;
+}
+
+.intro p{
+  font-size: 18px;
+}
+
+.enter{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  border: 1px solid #211f1f;
+  padding: 32px ;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding:  100px 200px;
+}
+
+.about-us h2{
+  font-size: 52px;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.about-us p{
+  font-size: 23px;
+  color: #666b68;
+}
+
+.skanga{
+  display: flex;
+  padding-top: 76px;
+  padding-left: 200px;
+  padding-right: 56px;
+  padding-bottom: 73px;
+  align-items: center;
+}
+.skanga img{
+  width: 400px;
+  object-fit: cover;
+}
+
+.skanga-words{
+  padding: 30px;
+  width: 89vw;
+  font-size: 20px;
+}
+
+.skanga-words h2{
+  font-size: 56px;
+  font-weight: 300;
+  margin-bottom: 23px;
+}
+
+.skanga-words p{
+  color: #666b68;;
+}
+
+.parishes{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 43px;
+}
+
+.parishes > h2{
+  font-size: 63px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.parish{
+  width: 67vw;
+  padding-top: 12px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid  rgba(49, 47, 47, 0.674);
+  transition: all ease 300ms;
+}
+
+.parish h2{
+  font-size: 45px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+.parish p{
+  margin-top: 23px;
+  display: none;
+}
+
+.parish p[data-active]{
+  display: block;
+}
+
+@media(max-width:772px){
+  .overlay-sch{
+    width: 98vw;
+    left: 7px;
+    bottom: 12px;
+  }
+
+  .about-us{
+    padding: 23px 20px;
+  }
+
+  .about-us h2{
+    font-size: 2rem;
+  }
+
+  .about-us p{
+    font-size: 1.3rem;
+  }
+
+  .skanga{
+    flex-wrap: wrap;
+    padding: 23px 20px;
+  }
+
+  .parishes h2{
+    font-size: 1rem;
+  }
+
+  .parish p{
+    font-size: .9rem;
+  }
+
+}

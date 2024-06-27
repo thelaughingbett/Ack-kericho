@@ -165,3 +165,55 @@ a{
   border-right: 1px solid rgba(49, 47, 47, 0.674);
   padding-right: 23px;
 }
+
+.dept-coordinator{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  padding: 105px;
+}
+
+.info-dept-cord{
+  padding-right:200px ;
+  text-transform: capitalize;
+}
+
+.info-dept-cord h2{
+  font-size: 54px;
+  font-weight: 100;
+}
+
+.info-dept-cord h3{
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.cord-img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 45px;
+   border-left: 1px solid #22254D ;
+}
+
+.cord-img img{
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+}
+
+@media(max-width:772px){
+  .dept-coordinator{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 45px 23px;
+  }
+
+  .info-dept-cord{
+    padding: 45px 24px;
+  }
+
+  .cord-img{
+    border: none;
+  }
+}

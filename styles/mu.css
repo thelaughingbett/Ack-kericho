@@ -1,0 +1,146 @@
+header{
+  width: 100vw;
+  height: 100vh;
+}
+
+header img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.152);
+}
+
+.overlay-header .logo{
+  display: flex;
+  align-items: center;
+  padding: 23px;
+  gap: 12px;
+}
+
+.overlay-header .logo h2{
+  text-transform: capitalize;
+  font-size: 45px;
+  color: #121784;
+}
+
+.overlay-header .logo h4{
+  color: rgb(11, 95, 11);
+}
+
+.overlay-header .about-us{
+  position: absolute;
+  bottom: 23px;
+  left: 45px;
+}
+
+.overlay-header .about-us h2{
+  text-transform: capitalize;
+  font-size: 53px;
+  color: #292828;
+}
+
+.overlay-header .about-us p{
+  text-transform: capitalize;
+}
+main{
+  background-color:#ffffff;
+}
+
+.make{
+  padding: 100px 70px;
+  display: flex;
+  gap: 43px;
+}
+
+.words-yth{
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.words-yth h2{
+  font-size: 52px;
+  font-weight: 300;
+}
+
+.words-yth p{
+  font-size: 23px;
+  color: #666b68;
+}
+
+.versed{
+  font-weight: bold;
+}
+
+.more-stuff{
+  padding: 45px  200px 45px 300px;
+}
+
+.stuff-more{
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding-bottom: 45px;
+  font-size: 28px;
+}
+
+.stuff-more h2{
+  font-size: 54px;
+  font-weight: 300;
+}
+
+.stuff-more p{
+  font-weight: 500;
+}
+
+.stuff-more li{
+  list-style: disc;
+  margin-left: 18px;
+  margin-bottom: 7px;
+}
+
+@media(max-width:772px){
+ .header{
+  width: 100vw;
+  height: 50vh;
+ }
+
+  .make{
+    flex-wrap: wrap;
+    padding: 40px 26px;
+  }
+
+  .make img{
+    width: 300px;
+    height: 400px;
+  }
+
+  .words-yth h2{
+    font-size: 2rem;
+  }
+
+  .words-yth p{
+    font-size: 1.3rem;
+  }
+
+  #col-reverse{
+    flex-direction: column-reverse;
+  }
+
+  
+
+  .more-stuff{
+    padding: 62px 32px;
+  }
+
+  .stuff-more{
+    font-size: 1em;
+  }
+}
